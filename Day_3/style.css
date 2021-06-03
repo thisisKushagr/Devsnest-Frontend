@@ -1,0 +1,22 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name {
+    /* borde: */
+    background-color: red;
+    /* z-index: 1; */
+}
+
+.resume {
+    padding: 10px;
+    border: 2px solid blueviolet;
+    position: absolute;
+    top: 30px;
+    /* border-style: solid rgb(123, 66, 255); */
+}
+
+.personalProfile, .honors {
+    width: 40%;
+
+}
