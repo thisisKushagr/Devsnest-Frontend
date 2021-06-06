@@ -1,0 +1,108 @@
+.container {
+    /* width: 100vw; */
+    max-height: 100vh;
+    min-height: 90vh;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red {
+    background-color: rgb(19, 90, 245);
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+}
+
+.white {
+    background-color: white;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+
+.hands {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.hour .needle {
+    width: 15px;
+    height: 220px;
+    background-color: rgb(109, 5, 5);
+}
+
+.hour {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    animation: h_round 100s linear infinite;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+@keyframes h_round {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.minute .needle {
+    width: 10px;
+    height: 220px;
+    background-color: black;
+}
+
+.minute {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    animation: m_round 10s linear infinite;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@keyframes m_round {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.second .needle {
+    width: 5px;
+    height: 220px;
+    background-color: red;
+}
+
+.second {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    animation: s_round 1s linear infinite;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@keyframes s_round {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
