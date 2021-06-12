@@ -16,8 +16,17 @@ var library = [
     }
 ];
 
-const sortable = Object.fromEntries(
-    Object.entries(library).sort(([,a],[,b]) => a-b)
-);
+var sortable = [];
+for(var id in library){
+    sortable.push(library[id]['libraryID']);
+}
 
-console.log(sortable);
+sortable.sort((a,b) => b-a);
+
+for (const j in library) {
+    for (var k in library) {
+        if (sortable[j] == (library[k].libraryID)) {
+            console.log(library[k]);
+        }
+    }
+}
