@@ -1,9 +1,12 @@
 const cylinder = {
     pi: Math.PI,
-    radius: 1.0,
-    height: 7.0
+    radius: 10,
+    height: 10,
+    volume: function(){
+        return (this.pi * Math.pow(this.radius, 2) * this.height);
+    }
 }
 
-var vol = parseFloat( (cylinder.pi * Math.pow(cylinder.radius, 2) * cylinder.height).toFixed(4) );
+var vol = parseFloat( cylinder.volume().toFixed(4) );
 
 console.log(vol);
