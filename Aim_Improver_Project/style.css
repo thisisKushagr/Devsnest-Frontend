@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("Mikasa - armored titan.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    z-index: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.bgOverlay {
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .2s infinite alternate;
+    pointer-events: none;
+    z-index: 4;
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .4s infinite alternate;
+    z-index: 4;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .4s forwards;
+    border: 1px solid red;
+    z-index: 4;
+}
+
+.target {
+    background-color: greenyellow;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    border: 10px solid white;
+    z-index: 2;
+}
+
+.menupage {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 3;
+    cursor: default;
+    transition: all 0.1s ease;
+    user-select: none;
+}
+
+.menupage .playbtn {
+    color: white;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 1px solid chartreuse;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.menupage .playbtn:hover {
+    padding: 20px;
+}
+
+.menupage .difficulty {
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 1px solid chartreuse;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.menupage .difficulty:hover {
+    padding: 20px;
+}
+
+.menupage .about {
+    color: white;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 1px solid chartreuse;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.menupage .about:hover {
+    padding: 20px;
+}
+
+.diffPage {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 2;
+    cursor: default;
+    transition: all 0.1s ease;
+    user-select: none;
+}
+
+.diffPage .easy {
+    color: white;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 1px solid chartreuse;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.diffPage .easy:hover {
+    padding: 20px;
+}
+
+.diffPage .medium {
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 1px solid chartreuse;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.diffPage .medium:hover {
+    padding: 20px;
+}
+
+.diffPage .hard {
+    color: white;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 1px solid chartreuse;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.diffPage .hard:hover {
+    padding: 20px;
+}
+
+.score {
+    position: fixed;
+    color: white;
+    top: 5%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    opacity: 1;
+    user-select: none;
+}
+
+.highscore {
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    margin: 20px;
+}
