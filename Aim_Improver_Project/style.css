@@ -12,6 +12,7 @@ body {
     height: 90vh;
     width: 100%;
     z-index: 0;
+    cursor: none;
 }
 
 img {
@@ -169,7 +170,7 @@ img {
     padding: 20px;
 }
 
-.diffPage {
+/* .diffPage {
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -229,7 +230,7 @@ img {
 
 .diffPage .hard:hover {
     padding: 20px;
-}
+} */
 
 .score {
     position: fixed;
