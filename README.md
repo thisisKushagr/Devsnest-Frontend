@@ -61,21 +61,21 @@
 
 <h5>
     <a target="_blank" href="https://github.com/thisisKushagraGoel/Devsnest-Frontend/blob/main/Mahasabha%20VC%20projs/01.%20DevsNestLite/index.html">
-        A. Sample Devsnest page
+        1. Sample Devsnest page
     </a>
      = A template page like the main devsnest website
 </h5>
 
 <h5>
     <a target="_blank" href="https://github.com/thisisKushagraGoel/Devsnest-Frontend/blob/main/Mahasabha%20VC%20projs/02.%20Calculator/index.html">
-        A. Calculator with Javascript
+        2. Calculator with Javascript
     </a>
      = Create a calculator that does add, multiply, subtract etc. (with use of event Listeners)
 </h5>
 
 <h5>
     <a target="_blank" href="https://github.com/thisisKushagraGoel/Devsnest-Frontend/blob/main/Mahasabha%20VC%20projs/03.%20Aim_Improver_Project/index.html">
-        A. Aim Booster web project
+        3. Aim Booster web project
     </a>
      = Create a webapp that can help boost aim for FPS games (I created a copy of osu!)
 </h5>
