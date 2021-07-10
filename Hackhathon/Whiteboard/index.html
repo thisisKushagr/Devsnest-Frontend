@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeus Virtual Board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- /// side nav part -->
+
+    <!-- /// side nav part -->
+
+    <!-- side nav calling bar -->
+      <div class="option">
+        <div class="row">
+			<small>BG Colour</small>
+          <span class="bgcolour">
+            <select
+              name="bg"
+              id="bgcolor"
+              onchange="changeBackground(this.options[this.selectedIndex].value)"
+            >
+              <option value="#F8F8FF">White</option>
+              <option value="#202020">Black</option>
+              <option value="#244D15">Green</option>
+            </select>
+          </span>
+		  <small>Pen thickness</small>
+          <select
+            name="thickness"
+            id="select_thickness"
+            onchange="changeThickness(this.options[this.selectedIndex].value)"
+          >
+            <option value="5">5</option>
+            <option value="7">7</option>
+            <option value="9">9</option>
+            <option value="11">11</option>
+            <option value="13">13</option>
+            <option value="15">15</option>
+          </select>
+		  <button class="btn" id="erase"><img class="eraser-btn"  src="/assets/icons8-pencil-eraser-36.png" alt="eraser"/></button>
+      <button id="write_btn" class="btn" value="Write"><img src="/assets/penIcon.png" alt="pen"/></button>
+		  <button id="clearBtn" class="btn" value="Clear"><img src="/assets/broom.png" alt="clear"/></button>
+		  <a id="downloadAnchor" download="board.png">
+			<button id="download-btn" class="btn"><img id="downloadAnchor" src="/assets/download.png"alt="down"/></button>
+		  </a>
+          <div class="colour_dots">
+            <!-- <span
+              id="yellow"
+              class="round"
+              onclick="changeColor('#FFF222')"
+			  style="background-color: #FFF222;"
+            ></span>
+            <span
+              id="blue"
+              class="round"
+              onclick="changeColor('#0ABDE3')"
+			  style="background-color: #0ABDE3; backdrop-filter: blur( 6.5px ); box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );"
+            ></span> -->
+            <span
+              id="white"
+              class="round"
+              onclick="changeColor('#e7e7e7')"
+			  style="background-color: #e7e7e7;"
+            ></span>
+			<span
+              id="green"
+              class="round"
+              onclick="changeColor('rgb(22, 240, 22)')"
+			  style="background-color: rgb(22, 240, 22);"
+            ></span>
+			<span
+              id="red"
+              class="round"
+              onclick="changeColor('rgb(209, 51, 12)')"
+			  style="background-color: rgb(209, 51, 12);"
+            ></span>
+            <span
+              id="black"
+              class="round"
+              onclick="changeColor('#000000')"
+			  style="background-color: #000;"
+            ></span>
+            <span  class="round"
+			style="background: linear-gradient(to right, #a80077, #66ff00);" >
+          <input type="color" id="color-picker" class="round" onclick="changeColor(this.value)" style="background: linear-gradient(to right, #a80077, #66ff00);" >
+            </span>
+			
+          </div>
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+	<!-- <a id="downloadAnchor" download="board.png">
+		<h5 class="h5" id="download-btn"><em class="fas fa-download"></em> Download Board</h5>
+	  </a> -->
+    <script src="/canvas.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+  <!-- <a></a>
+
+
+  <h5 class="h5" id="download-btn"><i class="fas fa-download"></i> Download Board</h5> -->
